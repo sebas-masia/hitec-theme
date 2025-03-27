@@ -1,0 +1,140 @@
+/* Custom Header Styles */
+.hitec-custom-header {
+    background-color: #000;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 30px 0 10px 0;
+    height: 80px; /* Set a fixed height */
+    display: flex;
+    align-items: center;
+}
+
+.hitec-header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.hitec-logo {
+    flex: 0 0 auto;
+}
+
+.hitec-logo img {
+    height: 30px; /* Reduced from 40px */
+    width: auto;
+    display: block;
+}
+
+.hitec-main-nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.hitec-main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+}
+
+.hitec-main-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Archivo', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+    line-height: 1;
+}
+
+.hitec-main-nav a:hover {
+    color: #FF9B52;
+}
+
+.hitec-header-icons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.hitec-icon {
+    color: #fff;
+    font-size: 16px; /* Reduced from 18px */
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hitec-icon:hover {
+    color: #FF9B52;
+}
+
+/* Add space below header for all pages */
+body {
+    padding-top: 60px; /* Match header height */
+}
+
+/* Hide default WordPress header */
+.site-header {
+    display: none !important;
+}
+
+/* Hide any other default WordPress elements we don't want */
+.skip-link,
+.site-branding,
+.main-navigation {
+    display: none !important;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .hitec-main-nav ul {
+        gap: 20px;
+    }
+    
+    .hitec-main-nav a {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hitec-custom-header {
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .hitec-header-container {
+        flex-wrap: wrap;
+    }
+    
+    .hitec-main-nav {
+        order: 3;
+        flex-basis: 100%;
+        margin-top: 10px;
+    }
+    
+    .hitec-main-nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    body {
+        padding-top: 100px; /* Adjust for mobile header height */
+    }
+} 

@@ -1,0 +1,893 @@
+/* Hi-Tec Landing Page Styles */
+
+/* Custom Fonts */
+@font-face {
+    font-family: 'Anton';
+    src: url('../fonts/Anton-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Archivo';
+    src: url('../fonts/Archivo-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Archivo';
+    src: url('../fonts/Archivo-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Archivo';
+    src: url('../fonts/Archivo-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MyriadPro';
+    src: url('../fonts/MyriadPro-Regular_1.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Reset box-sizing */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* General Styles */
+.hitec-landing {
+  font-family: 'Archivo', sans-serif;
+  color: #333;
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  /* padding-top: 30px; Height of header */
+}
+
+.hitec-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hitec-section-header {
+  text-align: left;
+  margin-bottom: 50px;
+  flex: 0.8;
+  padding-right: 20px;
+}
+
+.hitec-section-header h2 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 0;
+  color: #666;
+  font-family: 'MyriadPro', sans-serif;
+}
+
+.hitec-section-header h3 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-top: 5px;
+  text-transform: uppercase;
+  font-family: 'Anton', sans-serif;
+}
+
+.hitec-section-header p {
+  font-size: 18px;
+  color: #666;
+  font-family: 'Archivo', sans-serif;
+  font-weight: 500;
+}
+
+.hitec-button {
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  padding: 12px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.hitec-button:hover {
+  background-color: #333;
+}
+
+/* Hero Section */
+.hitec-hero {
+  position: relative;
+  height: 100vh;
+  min-height: 600px;
+  width: 100%;
+  background-image: url("../images/hero-background.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10%;
+  margin: 0;
+  text-align: right;
+}
+
+.hitec-hero-content {
+  text-align: right;
+  color: #fff;
+  max-width: 600px;
+  margin-left: auto;
+  margin-bottom: 0;
+}
+
+.hitec-hero-content h1 {
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 1.1;
+  text-transform: uppercase;
+  font-family: 'Anton', sans-serif;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hitec-hashtag {
+  font-size: 20px;
+  margin-bottom: 25px;
+  font-family: 'Archivo', sans-serif;
+  font-weight: 500;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.hitec-shop-now {
+  display: inline-block;
+  background-color: #FF9B52;
+  color: #fff;
+  padding: 15px 40px;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.hitec-shop-now:hover {
+  background-color: #ff8838;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Product Carousel Section */
+.hitec-carousel {
+    width: 100%;
+    padding: 60px 0;
+    background-color: #f5f5f5;
+    overflow: hidden;
+}
+
+.hitec-carousel-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 20px;
+}
+
+.hitec-carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.hitec-carousel-slide {
+    min-width: 100%;
+    padding: 0 15px;
+}
+
+.hitec-carousel-content {
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.hitec-carousel-content img {
+    width: 50%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.hitec-carousel-text {
+    width: 50%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hitec-carousel-text h3 {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 10px;
+    font-family: 'MyriadPro', sans-serif;
+}
+
+.hitec-carousel-text h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-family: 'Anton', sans-serif;
+    line-height: 1.2;
+}
+
+.hitec-carousel-text p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.hitec-ver-mas {
+    display: inline-block;
+    background-color: #FF9B52;
+    color: #fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    align-self: flex-start;
+    transition: all 0.3s ease;
+}
+
+.hitec-ver-mas:hover {
+    background-color: #ff8838;
+    transform: translateY(-2px);
+}
+
+.hitec-carousel-nav {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    pointer-events: none;
+}
+
+.hitec-carousel-prev,
+.hitec-carousel-next {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    pointer-events: auto;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hitec-carousel-prev:hover,
+.hitec-carousel-next:hover {
+    background-color: #fff;
+    transform: scale(1.1);
+}
+
+.hitec-carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.hitec-carousel-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hitec-carousel-dot.active {
+    background-color: #FF9B52;
+}
+
+@media (max-width: 768px) {
+    .hitec-carousel-content {
+        flex-direction: column;
+    }
+    
+    .hitec-carousel-content img,
+    .hitec-carousel-text {
+        width: 100%;
+    }
+    
+    .hitec-carousel-text {
+        padding: 30px;
+    }
+    
+    .hitec-carousel-text h2 {
+        font-size: 28px;
+    }
+}
+
+/* Products Section */
+.hitec-products {
+  width: 100%;
+  padding: 20px 0 40px 0;
+  background-color: #fff;
+}
+
+.hitec-featured-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 0 20px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 60px;
+}
+
+.hitec-featured-product {
+  flex: 1;
+  margin-bottom: 0;
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+}
+
+.hitec-featured-product img {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: 300px;
+  object-fit: contain;
+}
+
+.hitec-section-header {
+  flex: 1;
+  text-align: left;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hitec-section-header h2 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 5px;
+  color: #666;
+  font-family: 'MyriadPro', sans-serif;
+}
+
+.hitec-section-header h3 {
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0;
+  text-transform: uppercase;
+  font-family: 'Anton', sans-serif;
+  line-height: 1;
+  color: #333;
+}
+
+.hitec-product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  margin: 40px 0;
+}
+
+.hitec-product-item {
+  position: relative;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hitec-product-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.hitec-product-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  padding: 20px;
+}
+
+.hitec-product-link img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.hitec-product-item:hover img {
+  transform: scale(1.05);
+}
+
+.hitec-add-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  background: #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  transition: background-color 0.3s ease;
+}
+
+.hitec-add-button i {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.hitec-product-item:hover .hitec-add-button {
+  background: #333;
+}
+
+.hitec-product-link h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 10px 0;
+  color: #333;
+}
+
+.hitec-product-link p {
+  font-size: 1.1rem;
+  color: #666;
+  margin: 0;
+}
+
+.hitec-all-products {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.hitec-button {
+  display: inline-block;
+  background-color: #FF9B52;
+  color: #fff;
+  padding: 12px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  font-size: 13px;
+}
+
+.hitec-button:hover {
+  background-color: #ff8838;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .hitec-featured-header-container {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 40px;
+    gap: 30px;
+  }
+
+  .hitec-section-header {
+    text-align: center;
+    align-items: center;
+  }
+
+  .hitec-product-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+
+  .hitec-product-link {
+    padding: 15px;
+  }
+  
+  .hitec-add-button {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hitec-product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hitec-section-header h3 {
+    font-size: 28px;
+  }
+}
+
+/* Benefits Section */
+.hitec-benefits {
+    width: 100%;
+    padding: 120px 0;
+    background-image: url('../images/benefits-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    color: #fff;
+}
+
+.hitec-benefits::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hitec-benefits .hitec-container {
+    position: relative;
+    z-index: 2;
+}
+
+.hitec-benefits .hitec-section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.hitec-benefits .hitec-section-header h3 {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.hitec-benefits .hitec-section-header p {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.hitec-benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.hitec-benefit-item {
+    text-align: center;
+    padding: 40px 30px;
+    background-color: rgba(255, 255, 255, 0.92);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.hitec-benefit-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    background-color: rgba(255, 255, 255, 0.97);
+}
+
+.hitec-benefit-item img {
+    height: 90px;
+    width: auto;
+    margin-bottom: 25px;
+    filter: brightness(1.02) contrast(1.05);
+    transition: all 0.3s ease;
+}
+
+.hitec-benefit-item:hover img {
+    transform: scale(1.05);
+}
+
+.hitec-benefit-item h4 {
+    color: #333;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.hitec-benefit-item p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Lifestyle Images Section */
+.hitec-lifestyle {
+  width: 100%;
+  padding: 60px 0;
+  background-color: #fff;
+  text-align: center;
+}
+
+.hitec-lifestyle h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-family: 'Anton', sans-serif;
+}
+
+.hitec-lifestyle .hitec-button {
+  display: inline-block;
+  background-color: #FF9B52;
+  color: #fff;
+  padding: 12px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+
+.hitec-lifestyle .hitec-button:hover {
+  background-color: #ff8838;
+  transform: translateY(-2px);
+}
+
+.hitec-lifestyle-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hitec-lifestyle-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.hitec-lifestyle-item:hover {
+  transform: translateY(-5px);
+}
+
+.hitec-lifestyle-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.hitec-lifestyle-item:hover img {
+  transform: scale(1.05);
+}
+
+/* Store Info Section */
+.hitec-store-info {
+  width: 100%;
+  padding: 60px 0;
+  background-color: #1C1C1C;
+  color: #fff;
+}
+
+.hitec-info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hitec-info-item h4 {
+  font-size: 18px;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  font-family: 'Anton', sans-serif;
+  color: #fff;
+}
+
+.hitec-info-item ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hitec-info-item ul li {
+  margin-bottom: 15px;
+}
+
+.hitec-info-item ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 14px;
+  font-family: 'Archivo', sans-serif;
+}
+
+.hitec-info-item ul li a:hover {
+  color: #FF9B52;
+}
+
+.hitec-social {
+  display: flex;
+  gap: 15px;
+}
+
+.hitec-social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  color: #1C1C1C;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.hitec-social-icon:hover {
+  background-color: #FF9B52;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 1024px) {
+  .hitec-lifestyle-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hitec-info-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .hitec-social {
+    justify-content: center;
+  }
+
+  .hitec-lifestyle h2 {
+    font-size: 28px;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hitec-lifestyle-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* WordPress Overrides */
+.site {
+  max-width: none !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+body {
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow-x: hidden !important;
+}
+
+/* Custom Header Styles */
+.hitec-custom-header {
+    background-color: #000;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.hitec-header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.hitec-logo {
+    flex: 0 0 auto;
+}
+
+.hitec-logo img {
+    height: 30px;
+    width: auto;
+}
+
+/* Navigation */
+.hitec-main-nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 40px;
+}
+
+.hitec-main-nav a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.hitec-main-nav a:hover {
+    color: #ccc;
+}
+
+/* Header Icons */
+.hitec-header-icons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.hitec-icon {
+    color: #fff;
+    background: none;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.hitec-icon:hover {
+    color: #ccc;
+}
+

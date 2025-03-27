@@ -1,0 +1,234 @@
+/* Product Specifications Page Styles */
+.hitec-product-specs {
+    background-color: #fff;
+    padding-top: 40px; /* Add space below the header */
+}
+
+/* Product Details Section */
+.hitec-product-details {
+    padding: 40px 0;
+}
+
+.hitec-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.hitec-product-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    margin-bottom: 80px;
+}
+
+/* Product Gallery */
+.hitec-product-gallery {
+    position: sticky;
+    top: 100px; /* Adjusted to account for header */
+}
+
+.hitec-main-image {
+    margin-bottom: 20px;
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.hitec-main-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hitec-thumbnail-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.hitec-thumbnail-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    background: #f8f8f8;
+    padding: 10px;
+}
+
+.hitec-thumbnail-grid img:hover {
+    opacity: 0.8;
+}
+
+/* Product Info */
+.hitec-product-info {
+    padding: 20px 0;
+}
+
+.hitec-product-info h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #333;
+    font-family: 'Archivo', sans-serif;
+    line-height: 1.2;
+}
+
+.hitec-product-price {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #FF9B52;
+    margin-bottom: 30px;
+    font-family: 'Archivo', sans-serif;
+}
+
+.hitec-product-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.hitec-product-features {
+    margin-bottom: 40px;
+}
+
+.hitec-product-features h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+    font-family: 'Archivo', sans-serif;
+}
+
+.hitec-product-features ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hitec-product-features li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.hitec-product-features i {
+    color: #FF9B52;
+    margin-right: 15px;
+}
+
+/* Product Actions */
+.hitec-product-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hitec-size-selector {
+    padding: 12px;
+    font-size: 1.1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    font-family: 'Archivo', sans-serif;
+}
+
+.hitec-add-to-cart {
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #FF9B52;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Archivo', sans-serif;
+    text-transform: uppercase;
+}
+
+.hitec-add-to-cart:hover {
+    background-color: #ff8c3a;
+}
+
+/* Technical Specifications */
+.hitec-technical-specs {
+    padding: 60px 0;
+    border-top: 1px solid #eee;
+    background: #f8f8f8;
+}
+
+.hitec-technical-specs h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #333;
+    text-align: center;
+    font-family: 'Archivo', sans-serif;
+}
+
+.hitec-specs-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.hitec-spec-item {
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.hitec-spec-item h4 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+    font-family: 'Archivo', sans-serif;
+}
+
+.hitec-spec-item p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #666;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .hitec-product-layout {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .hitec-product-gallery {
+        position: static;
+    }
+
+    .hitec-specs-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .hitec-specs-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hitec-product-info h1 {
+        font-size: 2rem;
+    }
+
+    .hitec-product-price {
+        font-size: 1.5rem;
+    }
+
+    .hitec-container {
+        padding: 0 15px;
+    }
+} 
